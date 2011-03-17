@@ -1,0 +1,22 @@
+Autor:
+    Ricardo D. Quiroga -> L2Radamanthys
+    l2radamanthys@gmail.com
+    http://www.l2radamanthys.com.ar
+
+Licencia: GPL2
+
+Requerimientos:
+    -python >= 2.5 < 2.7
+    -pygtk
+    -gtk > 2.14
+
+    Os:
+        -GNU/Linux
+        -Windows
+
+Descripcion:
+    Aplicacion Boba que permite calcular rapidamente el porcentaje de
+error que hay entre el valor obtenido en la solucion y el mejor
+hasta el momento que esta en la tabla tsp
+
+

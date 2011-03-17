@@ -1,0 +1,24 @@
+Autores:
+	Nelson Cruz
+	Ricardo Quiroga
+	Hector Nuñez
+
+Requerimientos:
+    -python >= 2.5 < 2.7
+    Os:
+        -GNU/Linux
+        -Windows
+
+Informacion:
+	Los algoritmos de VNS se encuentran en src/algoritmos.py los demas archivos traen funiones complementarias, la mayoria de las instancias de TSPLIB se encuentran en data/ ademas alli se pueden encontrar todas las instancias que se utilizaron en las pruebas
+
+Ejecucion:
+	- Para hacer las pruebas ejecutar el archivo run_test.py Se puede pasar como parametro el nombre del archivo que contiene el problema, si no simplemente ejecutar el script y este pedira el nombre de la instancia OJO! se debe pasar solo el nombre de el archivo  y no la direccion del archivo, por ejemplo despues de ubicarse en el directorio donde esta el script
+				$ python run_test.py ch130.tsp
+	O si no:
+				$ python run_test.py
+	y luego cuando se pida tipear ch130.tsp
+Los parametros por comodida se modifican en el script y no se ingresan por teclado, una vez ejecutado el script este correra diez veces el algoritmo y generara archivos con las diferente soluciones encontradas, se puede hacer que corra solo una vez cambiando NRO_PRUEVAS = 10 por NRO_PRUEVAS = 1 en el script run_test.py.
+
+	- drawn_sol.py dibuja el problema, esta en estado alpha. deberia dibujar ademas la solucion.
+

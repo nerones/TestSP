@@ -1,0 +1,46 @@
+11/05/2010
+    Comienzo.... bue la verdad no se que hago mirando esto, ahora tendria
+que estar estudiando economia (tengo que ir al recuperatorio por boludo) 
+en ves de andar boludeando con esto... bue todo esto por que el codigo 
+pasado me parece orrible, y asi como esta no le entiendo una mierd...
+
+15/05/2010
+    Bueno aunque todavia no comence a tratar de resolver los problemas TSP
+(todavia estoy en proceso de migrar codigo), pero al menos ya tengo listas
+las funciones que permiten cargar tanto los problemas como las soluciones
+optimas. 
+    Comentario aparte, creo que me fue para el ojete en el recuperatorio de
+economia.
+
+16/05/2010
+    Argv... tengo la cabeza que me explota... no fue buena idea ponerse a 
+programar despues de la joda de anoche y eso que todavia tengo que leer
+algunos paper mas de VNS  y TCP... segun estuve viendo este problema es
+archi conocido, pero por ser tan conocido mmm va a estar medio complicado
+aproximar o llegar al optimo segun lo que piden en IO.
+
+17/05/2010
+    Joder estube intentando implementar 2 opt pero por alguna extraña razon la 
+basura no kiere andar... mankea cada rato y aveses el agoritmo enpeora 
+la solucion optenida inicialmente, para comprobar que fallaba implemente 
+una version, aunque es mucho mejor (aproxima bastante bien) esta atada con 
+alambre y por ende es mucho mas lenta que la oirginal... ablamos de 2 a 3 
+seg orig, y 3+ minutos la v2. 
+    Sigo reparando algunos errores que le detecte a mis modificaciones de los 
+algoritmos. Intente probar con el problema de mona lisa y me tira que se 
+desbordo la memoria :P (tengo que agregar mas ram o usar alguna libreria).
+    Aunque uso numpy todavia no hay un soporte completo del mismo por lo que
+sigo usando arrays basico de python, pronto lo armare para tenga soporte 
+completo.
+
+20/05/2010
+    Bueno al menos encontre la solucion al problema de 2-Opt, en realidad no 
+fui yo el que encontro la solucion sino Nelson... por ende en un principio (la 
+primera version del 2-Opt) no comente pero Sonrrisas descubrio otra manqueada 
+mia :P.
+    Programando la primera version del 3-Opt, joder usa hasta 8 conbinaciones
+y tengo que compararlas todas, me salio mas facil meterlas en un array y usar
+un sort (es algo mas lento (milesimas de Seg) pero escribo menos codigo) para
+ordenar el array y sacar el primero.
+
+

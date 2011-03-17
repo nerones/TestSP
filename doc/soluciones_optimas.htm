@@ -1,0 +1,259 @@
+<!DOCTYPE html PUBLIC "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+  <meta http-equiv="Content-Type"
+ content="text/html; charset=iso-8859-1">
+  <meta name="GENERATOR"
+ content="Mozilla/4.76 [en] (X11; U; SunOS 5.7 sun4u) [Netscape]">
+  <title>Symmetric TSPs</title>
+</head>
+<body text="#000000" bgcolor="#ffffff">
+<hr>
+<h1><small>Optimal solutions for symmetric TSPs</small></h1>
+<hr>
+<br>
+<big>When I published TSPLIB more than 10 years ago, I expected
+that at least solving the large problem instances to proven optimality
+would pose a challange for the years to come.
+<br><br>
+However, due to enormous algorithmic progress all problems 
+are now solved to optimality!!<br>
+</big><br>
+<ul>
+  <big> </big><li style="color: rgb(0, 0, 153);"><big>a280 : 2579</big></li>
+  <big style="color: rgb(0, 0, 153);"> </big><li
+ style="color: rgb(0, 0, 153);"><big>ali535 : 202339</big></li>
+  <big style="color: rgb(0, 0, 153);"> </big><li
+ style="color: rgb(0, 0, 153);"><big>att48 : 10628</big></li>
+  <big style="color: rgb(0, 0, 153);"> </big><li
+ style="color: rgb(0, 0, 153);"><big>att532 : 27686</big></li>
+  <big style="color: rgb(0, 0, 153);"> </big><li
+ style="color: rgb(0, 0, 153);"><big>bayg29 : 1610</big></li>
+  <big style="color: rgb(0, 0, 153);"> </big><li
+ style="color: rgb(0, 0, 153);"><big>bays29 : 2020</big></li>
+  <big style="color: rgb(0, 0, 153);"> </big><li
+ style="color: rgb(0, 0, 153);"><big>berlin52 : 7542</big></li>
+  <big style="color: rgb(0, 0, 153);"> </big><li
+ style="color: rgb(0, 0, 153);"><big>bier127 : 118282</big></li>
+  <big style="color: rgb(0, 0, 153);"> </big><li
+ style="color: rgb(0, 0, 153);"><big>brazil58 : 25395</big></li>
+  <big style="color: rgb(0, 0, 153);"> </big><li
+ style="color: rgb(0, 0, 153);"><big>brd14051 : 469385</big></li>
+  <big style="color: rgb(0, 0, 153);"> </big><li
+ style="color: rgb(0, 0, 153);"><big>brg180 : 1950</big></li>
+  <big style="color: rgb(0, 0, 153);"> </big><li
+ style="color: rgb(0, 0, 153);"><big>burma14 : 3323</big></li>
+  <big style="color: rgb(0, 0, 153);"> </big><li
+ style="color: rgb(0, 0, 153);"><big>ch130 : 6110</big></li>
+  <big style="color: rgb(0, 0, 153);"> </big><li
+ style="color: rgb(0, 0, 153);"><big>ch150 : 6528</big></li>
+  <big style="color: rgb(0, 0, 153);"> </big><li
+ style="color: rgb(0, 0, 153);"><big>d198 : 15780</big></li>
+  <big style="color: rgb(0, 0, 153);"> </big><li
+ style="color: rgb(0, 0, 153);"><big>d493 : 35002</big></li>
+  <big style="color: rgb(0, 0, 153);"> </big><li
+ style="color: rgb(0, 0, 153);"><big>d657 : 48912</big></li>
+  <big style="color: rgb(0, 0, 153);"> </big><li
+ style="color: rgb(0, 0, 153);"><big>d1291 : 50801</big></li>
+  <big style="color: rgb(0, 0, 153);"> </big><li
+ style="color: rgb(0, 0, 153);"><big>d1655 : 62128</big></li>
+  <big style="color: rgb(0, 0, 153);"> </big><li
+ style="color: rgb(0, 0, 153);"><big>d2103 : 80450</big></li>
+  <big style="color: rgb(0, 0, 153);"> </big><li
+ style="color: rgb(0, 0, 153);"><big>d15112 : 1573084</big></li>
+  <big style="color: rgb(0, 0, 153);"> </big><li
+ style="color: rgb(0, 0, 153);"><big>d18512 : 645238<br>
+    </big></li>
+  <big style="color: rgb(0, 0, 153);"> </big><li
+ style="color: rgb(0, 0, 153);"><big>dantzig42 : 699</big></li>
+  <big style="color: rgb(0, 0, 153);"> </big><li
+ style="color: rgb(0, 0, 153);"><big>dsj1000 : 18659688 (EUC_2D)</big></li>
+  <big style="color: rgb(0, 0, 153);"> </big><li
+ style="color: rgb(0, 0, 153);"><big>dsj1000 : 18660188 (CEIL_2D)</big></li>
+  <big style="color: rgb(0, 0, 153);"> </big><li
+ style="color: rgb(0, 0, 153);"><big>eil51 : 426</big></li>
+  <big style="color: rgb(0, 0, 153);"> </big><li
+ style="color: rgb(0, 0, 153);"><big>eil76 : 538</big></li>
+  <big style="color: rgb(0, 0, 153);"> </big><li
+ style="color: rgb(0, 0, 153);"><big>eil101 : 629</big></li>
+  <big style="color: rgb(0, 0, 153);"> </big><li
+ style="color: rgb(0, 0, 153);"><big>fl417 : 11861</big></li>
+  <big style="color: rgb(0, 0, 153);"> </big><li
+ style="color: rgb(0, 0, 153);"><big>fl1400 : 20127</big></li>
+  <big style="color: rgb(0, 0, 153);"> </big><li
+ style="color: rgb(0, 0, 153);"><big>fl1577 : 22249</big></li>
+  <big style="color: rgb(0, 0, 153);"> </big><li
+ style="color: rgb(0, 0, 153);"><big>fl3795 : 28772</big></li>
+  <big style="color: rgb(0, 0, 153);"> </big><li
+ style="color: rgb(0, 0, 153);"><big>fnl4461 : 182566</big></li>
+  <big style="color: rgb(0, 0, 153);"> </big><li
+ style="color: rgb(0, 0, 153);"><big>fri26 : 937</big></li>
+  <big style="color: rgb(0, 0, 153);"> </big><li
+ style="color: rgb(0, 0, 153);"><big>gil262 : 2378</big></li>
+  <big style="color: rgb(0, 0, 153);"> </big><li
+ style="color: rgb(0, 0, 153);"><big>gr17 : 2085</big></li>
+  <big style="color: rgb(0, 0, 153);"> </big><li
+ style="color: rgb(0, 0, 153);"><big>gr21 : 2707</big></li>
+  <big style="color: rgb(0, 0, 153);"> </big><li
+ style="color: rgb(0, 0, 153);"><big>gr24 : 1272</big></li>
+  <big style="color: rgb(0, 0, 153);"> </big><li
+ style="color: rgb(0, 0, 153);"><big>gr48 : 5046</big></li>
+  <big style="color: rgb(0, 0, 153);"> </big><li
+ style="color: rgb(0, 0, 153);"><big>gr96 : 55209</big></li>
+  <big style="color: rgb(0, 0, 153);"> </big><li
+ style="color: rgb(0, 0, 153);"><big>gr120 : 6942</big></li>
+  <big style="color: rgb(0, 0, 153);"> </big><li
+ style="color: rgb(0, 0, 153);"><big>gr137 : 69853</big></li>
+  <big style="color: rgb(0, 0, 153);"> </big><li
+ style="color: rgb(0, 0, 153);"><big>gr202 : 40160</big></li>
+  <big style="color: rgb(0, 0, 153);"> </big><li
+ style="color: rgb(0, 0, 153);"><big>gr229 : 134602</big></li>
+  <big style="color: rgb(0, 0, 153);"> </big><li
+ style="color: rgb(0, 0, 153);"><big>gr431 : 171414</big></li>
+  <big style="color: rgb(0, 0, 153);"> </big><li
+ style="color: rgb(0, 0, 153);"><big>gr666 : 294358</big></li>
+  <big style="color: rgb(0, 0, 153);"> </big><li
+ style="color: rgb(0, 0, 153);"><big>hk48 : 11461</big></li>
+  <big style="color: rgb(0, 0, 153);"> </big><li
+ style="color: rgb(0, 0, 153);"><big>kroA100 : 21282</big></li>
+  <big style="color: rgb(0, 0, 153);"> </big><li
+ style="color: rgb(0, 0, 153);"><big>kroB100 : 22141</big></li>
+  <big style="color: rgb(0, 0, 153);"> </big><li
+ style="color: rgb(0, 0, 153);"><big>kroC100 : 20749</big></li>
+  <big style="color: rgb(0, 0, 153);"> </big><li
+ style="color: rgb(0, 0, 153);"><big>kroD100 : 21294</big></li>
+  <big style="color: rgb(0, 0, 153);"> </big><li
+ style="color: rgb(0, 0, 153);"><big>kroE100 : 22068</big></li>
+  <big style="color: rgb(0, 0, 153);"> </big><li
+ style="color: rgb(0, 0, 153);"><big>kroA150 : 26524</big></li>
+  <big style="color: rgb(0, 0, 153);"> </big><li
+ style="color: rgb(0, 0, 153);"><big>kroB150 : 26130</big></li>
+  <big style="color: rgb(0, 0, 153);"> </big><li
+ style="color: rgb(0, 0, 153);"><big>kroA200 : 29368</big></li>
+  <big style="color: rgb(0, 0, 153);"> </big><li
+ style="color: rgb(0, 0, 153);"><big>kroB200 : 29437</big></li>
+  <big style="color: rgb(0, 0, 153);"> </big><li
+ style="color: rgb(0, 0, 153);"><big>lin105 : 14379</big></li>
+  <big style="color: rgb(0, 0, 153);"> </big><li
+ style="color: rgb(0, 0, 153);"><big>lin318 : 42029</big></li>
+  <big style="color: rgb(0, 0, 153);"> </big><li
+ style="color: rgb(0, 0, 153);"><big>linhp318 : 41345</big></li>
+  <big style="color: rgb(0, 0, 153);"> </big><li
+ style="color: rgb(0, 0, 153);"><big>nrw1379 : 56638</big></li>
+  <big style="color: rgb(0, 0, 153);"> </big><li
+ style="color: rgb(0, 0, 153);"><big>p654 : 34643</big></li>
+  <big style="color: rgb(0, 0, 153);"> </big><li
+ style="color: rgb(0, 0, 153);"><big>pa561 : 2763</big></li>
+  <big style="color: rgb(0, 0, 153);"> </big><li
+ style="color: rgb(0, 0, 153);"><big>pcb442 : 50778</big></li>
+  <big style="color: rgb(0, 0, 153);"> </big><li
+ style="color: rgb(0, 0, 153);"><big>pcb1173 : 56892</big></li>
+  <big style="color: rgb(0, 0, 153);"> </big><li
+ style="color: rgb(0, 0, 153);"><big>pcb3038 : 137694</big></li>
+  <big style="color: rgb(0, 0, 153);"> </big><li
+ style="color: rgb(0, 0, 153);"><big>pla7397 : 23260728</big></li>
+  <big style="color: rgb(0, 0, 153);"> </big><li
+ style="color: rgb(0, 0, 153);"><big>pla33810 : 66048945</big></li>
+  <big style="color: rgb(0, 0, 153);"> </big><li
+ style="color: rgb(0, 0, 153);"><big>pla85900 :
+142382641</big> </li>
+  <big style="color: rgb(0, 0, 153);"> </big><li
+ style="color: rgb(0, 0, 153);"><big>pr76 : 108159</big></li>
+  <big style="color: rgb(0, 0, 153);"> </big><li
+ style="color: rgb(0, 0, 153);"><big>pr107 : 44303</big></li>
+  <big style="color: rgb(0, 0, 153);"> </big><li
+ style="color: rgb(0, 0, 153);"><big>pr124 : 59030</big></li>
+  <big style="color: rgb(0, 0, 153);"> </big><li
+ style="color: rgb(0, 0, 153);"><big>pr136 : 96772</big></li>
+  <big style="color: rgb(0, 0, 153);"> </big><li
+ style="color: rgb(0, 0, 153);"><big>pr144 : 58537</big></li>
+  <big style="color: rgb(0, 0, 153);"> </big><li
+ style="color: rgb(0, 0, 153);"><big>pr152 : 73682</big></li>
+  <big style="color: rgb(0, 0, 153);"> </big><li
+ style="color: rgb(0, 0, 153);"><big>pr226 : 80369</big></li>
+  <big style="color: rgb(0, 0, 153);"> </big><li
+ style="color: rgb(0, 0, 153);"><big>pr264 : 49135</big></li>
+  <big style="color: rgb(0, 0, 153);"> </big><li
+ style="color: rgb(0, 0, 153);"><big>pr299 : 48191</big></li>
+  <big style="color: rgb(0, 0, 153);"> </big><li
+ style="color: rgb(0, 0, 153);"><big>pr439 : 107217</big></li>
+  <big style="color: rgb(0, 0, 153);"> </big><li
+ style="color: rgb(0, 0, 153);"><big>pr1002 : 259045</big></li>
+  <big style="color: rgb(0, 0, 153);"> </big><li
+ style="color: rgb(0, 0, 153);"><big>pr2392 : 378032</big></li>
+  <big style="color: rgb(0, 0, 153);"> </big><li
+ style="color: rgb(0, 0, 153);"><big>rat99 : 1211</big></li>
+  <big style="color: rgb(0, 0, 153);"> </big><li
+ style="color: rgb(0, 0, 153);"><big>rat195 : 2323</big></li>
+  <big style="color: rgb(0, 0, 153);"> </big><li
+ style="color: rgb(0, 0, 153);"><big>rat575 : 6773</big></li>
+  <big style="color: rgb(0, 0, 153);"> </big><li
+ style="color: rgb(0, 0, 153);"><big>rat783 : 8806</big></li>
+  <big style="color: rgb(0, 0, 153);"> </big><li
+ style="color: rgb(0, 0, 153);"><big>rd100 : 7910</big></li>
+  <big style="color: rgb(0, 0, 153);"> </big><li
+ style="color: rgb(0, 0, 153);"><big>rd400 : 15281</big></li>
+  <big style="color: rgb(0, 0, 153);"> </big><li
+ style="color: rgb(0, 0, 153);"><big>rl1304 : 252948</big></li>
+  <big style="color: rgb(0, 0, 153);"> </big><li
+ style="color: rgb(0, 0, 153);"><big>rl1323 : 270199</big></li>
+  <big style="color: rgb(0, 0, 153);"> </big><li
+ style="color: rgb(0, 0, 153);"><big>rl1889 : 316536</big></li>
+  <big style="color: rgb(0, 0, 153);"> </big><li
+ style="color: rgb(0, 0, 153);"><big>rl5915 : 565530</big></li>
+  <big style="color: rgb(0, 0, 153);"> </big><li
+ style="color: rgb(0, 0, 153);"><big>rl5934 : 556045</big></li>
+  <big style="color: rgb(0, 0, 153);"> </big><li
+ style="color: rgb(0, 0, 153);"><big>rl11849 : 923288</big></li>
+  <big style="color: rgb(0, 0, 153);"> </big><li
+ style="color: rgb(0, 0, 153);"><big>si175 : 21407</big></li>
+  <big style="color: rgb(0, 0, 153);"> </big><li
+ style="color: rgb(0, 0, 153);"><big>si535 : 48450</big></li>
+  <big style="color: rgb(0, 0, 153);"> </big><li
+ style="color: rgb(0, 0, 153);"><big>si1032 : 92650</big></li>
+  <big style="color: rgb(0, 0, 153);"> </big><li
+ style="color: rgb(0, 0, 153);"><big>st70 : 675</big></li>
+  <big style="color: rgb(0, 0, 153);"> </big><li
+ style="color: rgb(0, 0, 153);"><big>swiss42 : 1273</big></li>
+  <big style="color: rgb(0, 0, 153);"> </big><li
+ style="color: rgb(0, 0, 153);"><big>ts225 : 126643</big></li>
+  <big style="color: rgb(0, 0, 153);"> </big><li
+ style="color: rgb(0, 0, 153);"><big>tsp225 : 3916</big></li>
+  <big style="color: rgb(0, 0, 153);"> </big><li
+ style="color: rgb(0, 0, 153);"><big>u159 : 42080</big></li>
+  <big style="color: rgb(0, 0, 153);"> </big><li
+ style="color: rgb(0, 0, 153);"><big>u574 : 36905</big></li>
+  <big style="color: rgb(0, 0, 153);"> </big><li
+ style="color: rgb(0, 0, 153);"><big>u724 : 41910</big></li>
+  <big style="color: rgb(0, 0, 153);"> </big><li
+ style="color: rgb(0, 0, 153);"><big>u1060 : 224094</big></li>
+  <big style="color: rgb(0, 0, 153);"> </big><li
+ style="color: rgb(0, 0, 153);"><big>u1432 : 152970</big></li>
+  <big style="color: rgb(0, 0, 153);"> </big><li
+ style="color: rgb(0, 0, 153);"><big>u1817 : 57201</big></li>
+  <big style="color: rgb(0, 0, 153);"> </big><li
+ style="color: rgb(0, 0, 153);"><big>u2152 : 64253</big></li>
+  <big style="color: rgb(0, 0, 153);"> </big><li
+ style="color: rgb(0, 0, 153);"><big>u2319 : 234256</big></li>
+  <big style="color: rgb(0, 0, 153);"> </big><li
+ style="color: rgb(0, 0, 153);"><big>ulysses16 : 6859</big></li>
+  <big style="color: rgb(0, 0, 153);"> </big><li
+ style="color: rgb(0, 0, 153);"><big>ulysses22 : 7013</big></li>
+  <big style="color: rgb(0, 0, 153);"> </big><li
+ style="color: rgb(0, 0, 153);"><big>usa13509 : 19982859</big></li>
+  <big style="color: rgb(0, 0, 153);"> </big><li
+ style="color: rgb(0, 0, 153);"><big>vm1084 : 239297</big></li>
+  <big style="color: rgb(0, 0, 153);"> </big><li
+ style="color: rgb(0, 0, 153);"><big>vm1748 : 336556</big></li>
+  <big style="color: rgb(0, 0, 153);"> <big></big></big>
+</ul>
+<hr>
+<ul>
+  <i><big>May 22, 2007</big><br>
+  </i>
+</ul>
+<hr>
+<h3>Return to <a href="http://www.iwr.uni-heidelberg.de/iwr/comopt/">our
+group</a></h3>
+</body>
+</html>

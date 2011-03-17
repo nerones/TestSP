@@ -1,0 +1,124 @@
+<?xml version="1.0"?>
+<glade-interface>
+  <!-- interface-requires gtk+ 2.16 -->
+  <!-- interface-naming-policy project-wide -->
+  <widget class="GtkWindow" id="frm_main">
+    <property name="title" translatable="yes">Porcentaje de Error</property>
+    <property name="window_position">center</property>
+    <property name="default_width">220</property>
+    <property name="default_height">220</property>
+    <property name="destroy_with_parent">True</property>
+    <signal name="destroy" handler="on_frm_main_destroy"/>
+    <child>
+      <widget class="GtkFixed" id="fixed1">
+        <property name="visible">True</property>
+        <child>
+          <widget class="GtkLabel" id="label1">
+            <property name="width_request">100</property>
+            <property name="height_request">33</property>
+            <property name="visible">True</property>
+            <property name="xalign">0.47999998927116394</property>
+            <property name="yalign">0.4699999988079071</property>
+            <property name="label" translatable="yes">Optimo</property>
+          </widget>
+          <packing>
+            <property name="y">5</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="GtkLabel" id="label2">
+            <property name="width_request">165</property>
+            <property name="height_request">34</property>
+            <property name="visible">True</property>
+            <property name="xalign">0.49000000953674316</property>
+            <property name="label" translatable="yes">Optimo Encontrado</property>
+          </widget>
+          <packing>
+            <property name="y">57</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="GtkLabel" id="label3">
+            <property name="width_request">158</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="xalign">0.49000000953674316</property>
+            <property name="label" translatable="yes">Porcentage de Error</property>
+          </widget>
+          <packing>
+            <property name="y">110</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="GtkEntry" id="edt_opt_global">
+            <property name="width_request">193</property>
+            <property name="height_request">26</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="invisible_char">&#x25CF;</property>
+          </widget>
+          <packing>
+            <property name="x">17</property>
+            <property name="y">34</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="GtkEntry" id="edt_opt_local">
+            <property name="width_request">194</property>
+            <property name="height_request">25</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="invisible_char">&#x25CF;</property>
+          </widget>
+          <packing>
+            <property name="x">19</property>
+            <property name="y">87</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="GtkEntry" id="edt_error">
+            <property name="width_request">192</property>
+            <property name="height_request">25</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="invisible_char">&#x25CF;</property>
+          </widget>
+          <packing>
+            <property name="x">21</property>
+            <property name="y">141</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="GtkButton" id="btn_calcular">
+            <property name="label" translatable="yes">Calcular</property>
+            <property name="width_request">100</property>
+            <property name="height_request">34</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_btn_calcular_clicked"/>
+          </widget>
+          <packing>
+            <property name="x">53</property>
+            <property name="y">185</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="GtkButton" id="btn_limpiar">
+            <property name="label" translatable="yes">Limpiar</property>
+            <property name="width_request">98</property>
+            <property name="height_request">34</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="btn_limpiar_clicked"/>
+          </widget>
+          <packing>
+            <property name="x">56</property>
+            <property name="y">223</property>
+          </packing>
+        </child>
+      </widget>
+    </child>
+  </widget>
+</glade-interface>

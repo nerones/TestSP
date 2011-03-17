@@ -1,0 +1,4 @@
+#ficheros a ignorar
+*.pyc
+*.tex
+*.dvi
